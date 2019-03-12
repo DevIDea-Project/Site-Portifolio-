@@ -1,27 +1,52 @@
-var $lis  = document.getElementById('git'); 
+let $img1     = document.getElementById('java1');
+let $img2     = document.getElementById('node');
+let $img3     = document.getElementById('Angular');
+let $img4     = document.getElementById('html');  
+let curriculo = document.getElementById('curriculo');
+let linkdin   = document.getElementById('linkdin');
+ 
+(function(){
 
-var $img1 = document.getElementById('node');
-var $img2 = document.getElementById('java1');
-var $img3 = document.getElementById('java2');
-var $img4 = document.getElementById('html');
+      'use strict';
+      $img1.addEventListener('click', function(event){
+            event.stopPropagation();
+            window.open('https://github.com/brunoViniciusTiCa/JAVA-Biblioteca-Projeto-POO');
+      });
+      
+      $img2.addEventListener('click', function(event){
+            event.stopPropagation();
+            window.open('https://github.com/brunoViniciusTiCa/Projeto-Node');
+      });
+      
+      $img3.addEventListener('click', function(event){
+            event.stopPropagation();
+            window.open('https://github.com/brunoViniciusTiCa/Angular-Aplica-o');
+      });
+      
+      $img4.addEventListener('click', function(event){
+            event.stopPropagation();
+            window.open('https://github.com/brunoViniciusTiCa/Curso-de-JavaScript');
+      });
 
-$lis.addEventListener('click', function(){
-    window.location.href = 'https://github.com/brunoViniciusTiCa';
- });
+      curriculo.addEventListener('click', function(){
+           alert('Na proxima pagina você poderá baixar o curriculo e ter acesso a informações profissionais sobre Bruno Vinicius.');
+      });
 
-$img1.addEventListener('click', function(){
-    window.location.href = 'https://github.com/brunoViniciusTiCa/Projeto-Node';
- });
+      linkdin.addEventListener('click', function(event){
+           event.stopPropagation();
+           window.open('https://www.linkedin.com/in/bruno-vinicius-459a34127/');
+      });
 
- $img2.addEventListener('click', function(){
-    window.location.href = 'https://github.com/brunoViniciusTiCa/JAVA-Biblioteca-Projeto-POO';
- });
 
- $img3.addEventListener('click', function(){
-    window.location.href = 'https://github.com/brunoViniciusTiCa/Burgueria';
- });
+})();
+   
 
-$img4.addEventListener('click', function(){
-    window.location.href = 'https://github.com/brunoViniciusTiCa/Curso-de-JavaScript';
- });
+
+
+   
+
+
+
+
+
 
